@@ -18,18 +18,18 @@
     <ClCompile Include="Lab4P3_HectorCaceres.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="codificador.cpp">
+    <ClCompile Include="finder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="finder.cpp">
+    <ClCompile Include="codificador.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="codificador.h">
+    <ClInclude Include="finder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="finder.h">
+    <ClInclude Include="codificador.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
