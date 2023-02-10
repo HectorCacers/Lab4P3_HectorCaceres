@@ -14,6 +14,13 @@ int main(int argc, char** argv) {
 	string a = "", b = "", c = "", d = "";
 	/////////////////////
 
+
+	/////////////////////
+	finder y;
+	int fi = 0, co = 0;
+	string palabra = "";
+	/////////////////////
+
 	while (op != 3) {
 		cout << "\n\n" << endl;
 
@@ -85,7 +92,27 @@ int main(int argc, char** argv) {
 
 			break;
 		case 2:
-			break;
+			cout << "VER DATOS" << endl;
+			cout << "------------------" << endl;
+			cout << "\n" << endl;
+
+			y.ver_datos();
+			cout << "\n\n" << endl;
+
+			cout << "REGISTRAR DATOS" << endl;
+			cout << "--------------------" << endl;
+			cout << "\n" << endl;
+
+			cout << "FILA : ";
+			cin >> fi;
+			cout << "COLUMNA : ";
+			cin >> co;
+
+			cout << "\n\n" << endl;
+
+			y.registrar_datos(fi, co);
+
+			
 		case 3:
 			cout << "SALIENDO...." << endl;
 			break;
