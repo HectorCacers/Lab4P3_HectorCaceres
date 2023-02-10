@@ -32,6 +32,36 @@ int main(int argc, char** argv) {
 		switch (op) {
 
 		case 1:
+			cout << "VER DATOS" << endl;
+			cout << "------------------" << endl;
+			cout << "\n" << endl;
+
+			x.ver_datos();
+			cout << "\n\n" << endl;
+
+			cout << "REGISTRAR DATOS" << endl;
+			cout << "--------------------" << endl;
+			cout << "\n" << endl;
+
+			//cout<<"NOMBRE : ";
+			//cin>>a;
+			//cout<<"APELLIDO : ";
+			//cin>>b;
+			//cout<<"TELEFONO : ";
+			//cin>>c;
+			//cout<<"CLAVE : ";
+			//cin>>d;
+
+			a = "daniel";
+			b = "zuniga";
+			c = "94367120";
+			d = "secreto";
+
+			x.registrar_datos(a, b, c, d);
+
+			if (a.length() >= 4 & a.length() <= 10 & b.length() >= 4 & b.length() <= 10 & c.length() >= 4 & c.length() <= 10 & d.length() >= 4 & d.length() <= 10) {
+				cout << "\n\n" << endl;
+
 			break;
 		case 2:
 			break;
