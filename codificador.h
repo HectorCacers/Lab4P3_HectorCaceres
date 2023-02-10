@@ -1,8 +1,9 @@
 #pragma once
 #include "iostream"
 using namespace std;
-class codificador
-{
+
+
+class codificador {
 public:
 	string nombre;
 	string apellido;
@@ -25,6 +26,7 @@ void codificador::ver_datos() {
 	cout << "CLAVE : " << clave << endl;
 
 }
+
 void codificador::registrar_datos(string a, string b, string c, string d) {
 	nombre = a;
 	apellido = b;
@@ -48,10 +50,27 @@ void codificador::generar_contrasena() {
 	cout << "(" << clave.substr(5, 1) << ")";
 	cout << nombre.substr(4, 4);
 	cout << "(" << clave.substr(6, 1) << ")";
-	cout << apellido.substr(4, 4);
-	//cout<<"("<<clave.substr(7,1)<<")";
-	cout << telefono.substr(4, 4);
+	cout << apellido.substr(4, 2);
+
+	///////////////////////////////////
+
+
+	if (clave.length() < 8) {
+		cout << telefono.substr(4, 4);
+	}
+	else {
+		cout << "(" << clave.substr(7, 1) << ")";
+		cout << telefono.substr(4, 2);
+		cout << apellido.substr(6, 2);
+		cout << telefono.substr(6, 2);
+	}
+
+
+
+
+
+
+
 
 }
-
 

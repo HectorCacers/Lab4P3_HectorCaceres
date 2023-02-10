@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="codificador.cpp" />
+    <ClCompile Include="finder.cpp" />
     <ClCompile Include="Lab4P3_HectorCaceres.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="codificador.h" />
+    <ClInclude Include="finder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
