@@ -11,6 +11,7 @@ int main(int argc, char** argv) {
 	int op = 0;
 	/////////////////////
 	codificador x;
+	string a = "", b = "", c = "", d = "";
 	/////////////////////
 
 	while (op != 3) {
@@ -61,6 +62,26 @@ int main(int argc, char** argv) {
 
 			if (a.length() >= 4 & a.length() <= 10 & b.length() >= 4 & b.length() <= 10 & c.length() >= 4 & c.length() <= 10 & d.length() >= 4 & d.length() <= 10) {
 				cout << "\n\n" << endl;
+				cout << "VER DATOS" << endl;
+				cout << "------------------" << endl;
+				cout << "\n" << endl;
+
+				x.ver_datos();
+
+				cout << "\n\n" << endl;
+
+				cout << "CONTRASEÑA GENERADA : ";
+				x.generar_contrasena();
+
+
+			}
+			else {
+				cout << "\n\n" << endl;
+				cout << "! ERROR DE DATOS ! NO CUMPLEN LOS REQUISITOS DE LONGITUD " << endl;
+			}
+
+
+
 
 			break;
 		case 2:
